@@ -17,10 +17,23 @@ jobs:
         -d '{
           "username": "GitHub Update",
           "embeds": [{
-            "title": "New Update on Master Branch",
-            "description": "This is the latest version of the Client config files to be downloaded. [Download from here](https://github.com/BirdieTX/Queens-Guard-FIKA-Server/blob/main/README.md).",
-            "url": "https://github.com/BirdieTX/Queens-Guard-FIKA-Server/blob/main/README.md",
+            "title": "Client Config Files Update",
+            "description": "New updates are available for the Client Config Files.",
             "color": 5814783,
+            "fields": [
+              {
+                "name": "Download Config Files Here",
+                "value": "[Download Files](https://github.com/BirdieTX/Queens-Guard-FIKA-Server/archive/master.zip)"
+              },
+              {
+                "name": "Read More About Installation Instructions",
+                "value": "[Read More](https://github.com/BirdieTX/Queens-Guard-FIKA-Server/blob/main/README.md)"
+              },
+              {
+                "name": "Installation Guide Channel",
+                "value": "For more detailed guidance, please check the #install-guide channel."
+              }
+            ],
             "footer": {
               "text": "GitHub to Discord Integration"
             }
