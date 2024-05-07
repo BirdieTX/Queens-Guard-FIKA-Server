@@ -1,0 +1,29 @@
+name: Discord Notification
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send webhook to Discord
+      env:
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      run: |
+        curl -H "Content-Type: application/json" \
+        -d '{
+          "username": "GitHub Update",
+          "embeds": [{
+            "title": "New Update on Master Branch",
+            "description": "This is the latest version of the Client config files to be downloaded. [Download from here](https://github.com/BirdieTX/Queens-Guard-FIKA-Server/blob/main/README.md).",
+            "url": "https://github.com/BirdieTX/Queens-Guard-FIKA-Server/blob/main/README.md",
+            "color": 5814783,
+            "footer": {
+              "text": "GitHub to Discord Integration"
+            }
+          }]
+        }' \
+        $DISCORD_WEBHOOK_URL
