@@ -31,7 +31,7 @@ jobs:
               },
               {
                 "name": "Installation Guide Channel",
-                "value": "For more detailed guidance, please check the #install-guide channel."
+                "value": "[Join #install-guide](https://discord.com/channels/572186126614396959/1237190481931403315)"
               }
             ],
             "footer": {
