@@ -9,6 +9,13 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Get last commit date
+      id: last_commit
+      run: echo "LAST_COMMIT_DATE=$(git log -1 --format=%cd --date=format:'%Y-%m-%d')" >> $GITHUB_ENV
+
     - name: Send webhook to Discord
       env:
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -18,7 +25,7 @@ jobs:
           "username": "GitHub Update",
           "embeds": [{
             "title": "Client Config Files Update",
-            "description": "New updates are available for the Client Config Files.",
+            "description": "This is the latest version of the Client Config Files, updated as of ${{ env.LAST_COMMIT_DATE }}.",
             "color": 5814783,
             "fields": [
               {
