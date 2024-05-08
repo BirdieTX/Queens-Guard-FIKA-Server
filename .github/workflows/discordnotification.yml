@@ -1,0 +1,49 @@
+name: Discord Notification
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Get last commit date
+      id: last_commit
+      run: echo "LAST_COMMIT_DATE=$(git log -1 --format=%cd --date=format:'%Y-%m-%d')" >> $GITHUB_ENV
+
+    - name: Send webhook to Discord
+      env:
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      run: |
+        curl -H "Content-Type: application/json" \
+        -d '{
+          "username": "GitHub Update",
+          "embeds": [{
+            "title": "Client Config Files Update",
+            "description": "This is the latest version of the Client Config Files, updated as of ${{ env.LAST_COMMIT_DATE }}.",
+            "color": 5814783,
+            "fields": [
+              {
+                "name": "Download Config Files Here",
+                "value": "[Download Files](https://github.com/BirdieTX/Queens-Guard-FIKA-Server/archive/master.zip)"
+              },
+              {
+                "name": "Read More About Installation Instructions",
+                "value": "[Read More](https://github.com/BirdieTX/Queens-Guard-FIKA-Server/blob/main/README.md)"
+              },
+              {
+                "name": "Installation Guide Channel",
+                "value": "[Join #install-guide](https://discord.com/channels/572186126614396959/1237190481931403315)"
+              }
+            ],
+            "footer": {
+              "text": "GitHub to Discord Integration"
+            }
+          }]
+        }' \
+        $DISCORD_WEBHOOK_URL
