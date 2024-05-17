@@ -8,7 +8,7 @@
     "NotLookingTimeLimit": 4.0,
     "NotLookingAngle": 45.0,
     "NotLookingVisionSpeedModifier": 1.1,
-    "NotLookingAccuracyAmount": 0.33,
+    "NotLookingAccuracyAmount": 0.5,
     "DisableBotTalkPatching": false,
     "SAINCombatSquadLayerPriority": 24,
     "SAINExtractLayerPriority": 22,
@@ -20,7 +20,7 @@
   },
   "Cover": {
     "EnhancedCoverFinding": true,
-    "ShiftCoverChangeDecisionTime": 6.0,
+    "ShiftCoverChangeDecisionTime": 3.0,
     "ShiftCoverTimeSinceSeen": 30.0,
     "ShiftCoverTimeSinceEnemyCreated": 30.0,
     "ShiftCoverNoEnemyResetTime": 10.0,
@@ -35,8 +35,8 @@
     "EnableExtractsGlobal": true
   },
   "Flashlight": {
-    "DazzleEffectiveness": 3.0,
-    "MaxDazzleRange": 30.0,
+    "DazzleEffectiveness": 2.0,
+    "MaxDazzleRange": 25.0,
     "DebugFlash": false,
     "SillyMode": false
   },
@@ -82,10 +82,10 @@
     }
   },
   "Look": {
-    "GlobalVisionDistanceMultiplier": 1.0,
-    "GlobalVisionSpeedModifier": 1.0,
-    "NightTimeVisionModifier": 0.3,
-    "NightTimeVisionModifierSnow": 0.4,
+    "GlobalVisionDistanceMultiplier": 1.25,
+    "GlobalVisionSpeedModifier": 1.25,
+    "NightTimeVisionModifier": 0.4,
+    "NightTimeVisionModifierSnow": 0.5,
     "HourDawnStart": 6.0,
     "HourDawnEnd": 8.0,
     "HourDuskStart": 20.0,
@@ -171,17 +171,17 @@
       "specialWeapon": 80.0
     },
     "EngagementDistance": {
-      "Default": 125.0,
-      "assaultCarbine": 125.0,
-      "assaultRifle": 150.0,
-      "machinegun": 125.0,
-      "smg": 70.0,
-      "pistol": 50.0,
+      "Default": 145.0,
+      "assaultCarbine": 145.0,
+      "assaultRifle": 175.0,
+      "machinegun": 145.0,
+      "smg": 100.0,
+      "pistol": 75.0,
       "marksmanRifle": 175.0,
-      "sniperRifle": 300.0,
-      "shotgun": 50.0,
-      "grenadeLauncher": 100.0,
-      "specialWeapon": 100.0
+      "sniperRifle": 400.0,
+      "shotgun": 75.0,
+      "grenadeLauncher": 150.0,
+      "specialWeapon": 150.0
     },
     "WeaponClassScaling": 0.35,
     "RecoilScaling": 0.35,
