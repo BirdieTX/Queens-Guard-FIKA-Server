@@ -1,9 +1,11 @@
 {
-  "SelectedPreset": "deathwish",
+  "SelectedDefaultPreset": "none",
+  "SelectedCustomPreset": "Death Wish [Modified]",
   "DefaultPreset": "deathwish",
-  "AdvancedBotConfigs": false,
+  "AdvancedBotConfigs": true,
   "ConfigScaling": 1.0,
   "GlobalDebugMode": false,
+  "ForceBotsToRunAround": false,
   "DebugExternal": false,
   "DrawDebugGizmos": false,
   "DrawDebugLabels": false,
