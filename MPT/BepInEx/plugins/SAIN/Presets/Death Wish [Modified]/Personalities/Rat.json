@@ -66,6 +66,8 @@
       "WillSearchForEnemy": true,
       "WillSearchFromAudio": true,
       "WillChaseDistantGunshots": false,
+      "AudioStraightDistanceToIgnore": 125.0,
+      "AudioPathLengthDistanceToIgnore": 175.0,
       "SearchBaseTime": 240.0,
       "SearchWaitMultiplier": 1.0,
       "SprintWhileSearchChance": 0.0,
