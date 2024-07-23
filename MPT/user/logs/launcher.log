@@ -1,0 +1,19 @@
+[2024-07-23 16:24:06] ==== Launcher Started ====
+[2024-07-23 16:24:06][Warning] Launcher config not found
+[2024-07-23 16:24:06][Info] Creating launcher config: D:\Repos\Queens-Guard-FIKA-Server\MPT\user\launcher\config.json
+[2024-07-23 16:24:06][Info] Using launcher config at: D:\Repos\Queens-Guard-FIKA-Server\MPT\user\launcher\config.json
+[2024-07-23 16:24:06][Info] Using launcher config at: D:\Repos\Queens-Guard-FIKA-Server\MPT\user\launcher\config.json
+[2024-07-23 16:24:06][Info] Server URL is already set to default 'http://127.0.0.1:6969'
+[2024-07-23 16:24:06][Info] Game path is already set to default 'D:\Repos\Queens-Guard-FIKA-Server\MPT'
+[2024-07-23 16:24:08][Info] [Settings] Reseting game settings ...
+[2024-07-23 16:24:08][Info] [Settings] Game settings reset to live settings
+[2024-07-23 16:24:23][DEV_MODE][Info] Connected to server: http://108.181.213.65:6969 - SPT Version: 3.9.3
+[2024-07-23 16:24:36][DEV_MODE][Info] >>> Launching Game
+[2024-07-23 16:24:36][DEV_MODE][Info] >>> Account: Birdie
+[2024-07-23 16:24:36][DEV_MODE][Info] >>> Server : http://108.181.213.65:6969
+[2024-07-23 16:24:36][DEV_MODE][Info] [LaunchGame] spt-core.dll version: 3.9.3
+[2024-07-23 16:24:36][DEV_MODE][Info] [LaunchGame] Installed in Live :: NO
+[2024-07-23 16:24:36][DEV_MODE][Info] [LaunchGame] Setup Game Files ...
+[2024-07-23 16:24:36][DEV_MODE][Info] [LaunchGame] Game Validation   :: OK
+[2024-07-23 16:24:36][DEV_MODE][Error] [LaunchGame] Valid Game Path   :: FAILED
+[2024-07-23 16:24:36][DEV_MODE][Error] Could not find D:\Repos\Queens-Guard-FIKA-Server\MPT\EscapeFromTarkov.exe
